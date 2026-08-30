@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
-:root { --bg:#07111f; --panel:#0d1b2a; --panel2:#102235; --line:#1e344a; --text:#eef6ff; --muted:#8da4ba; --brand:#4ade80; --brand2:#22c55e; }
+:root { --bg:#07111f; --panel:#0d1b2a; --line:#1e344a; --text:#eef6ff; --brand:#4ade80; }
 * { box-sizing:border-box; }
 html,body { margin:0; min-height:100%; background:var(--bg); color:var(--text); font-family:Arial,Helvetica,sans-serif; }
 body { background:radial-gradient(circle at 80% 0%, rgba(34,197,94,.10), transparent 30%), var(--bg); }
 button,input { font:inherit; }
 .card { background:rgba(13,27,42,.88); border:1px solid var(--line); border-radius:18px; }
 .gradient { background:linear-gradient(135deg,#4ade80,#22c55e); }
+.input { width:100%; border-radius:12px; border:1px solid #334155; background:#0f172a; padding:12px; color:white; outline:none; }
+.input:focus { border-color:#4ade80; }
